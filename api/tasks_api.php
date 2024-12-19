@@ -13,13 +13,7 @@ function sendResponse($data, $statusCode = 200) {
 
 // Get the HTTP method and request URI
 $method = $_SERVER['REQUEST_METHOD'];
-$request = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-$resource = array_shift($request);
-$id = array_shift($request) ?? null;
 
-if ($resource !== 'tasks') {
-    sendResponse(['error' => 'Invalid endpoint'], 404);
-}
 
 switch ($method) {
     case 'GET':
