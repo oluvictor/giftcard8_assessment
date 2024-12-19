@@ -2,4 +2,4 @@
 /register
 
 #Task APIs
-/api/task
+/api/tasks
