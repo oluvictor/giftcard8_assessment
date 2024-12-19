@@ -1,5 +1,5 @@
 #Register
-/register
+/register.php
 
 #Task APIs
 /api/tasks
